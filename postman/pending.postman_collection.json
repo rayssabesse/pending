@@ -1,0 +1,1187 @@
+{
+	"info": {
+		"_postman_id": "fb77ea16-c805-447a-9c24-c747e5846822",
+		"name": "pending",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User.ListAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User.Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"emailUser\": \"TesteTeste@pending.com\",\r\n    \"passwordUser\": \"adm123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User.ListId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/users/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User.Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/users/excluir/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"excluir",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User.Refresh",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"idUser\": 3,\r\n        \"emailUser\": \"Teste@pending.com\",\r\n        \"passwordUser\": \"adm123\"\r\n       \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/users/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Client",
+			"item": [
+				{
+					"name": "Client.ListAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Client.Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameClient\": \"Teste4\",\r\n    \"phoneClient\": \"5511989750185\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Client.ListId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/clients/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"clients",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Client.Refresh",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"idClient\": 3,\r\n        \"nameClient\": \"Rayssa\",\r\n        \"phoneClient\": \"5511989052189\"\r\n       \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/clients/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"clients",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Client.Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/clients/excluir/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"clients",
+								"excluir",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "Transactions.ListAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transaction.Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idClient\": 4,\r\n        \"idTypeTransaction\": 2,\r\n        \"valueTransaction\": 5.000,\r\n        \"dateTransaction\": \"22/12/2022\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/transactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transaction.ListId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/transactions/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"transactions",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transaction.Refresh",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"idClient\": 4,\r\n        \"idTypeTransaction\": 2,\r\n        \"idTransaction\": 9,\r\n        \"valueTransaction\": 2.0000,\r\n        \"dateTransaction\": \"23/12/2022\"\r\n       \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/transactions/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"transactions",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transaction.Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/transactions/excluir/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"transactions",
+								"excluir",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TypeTransaction",
+			"item": [
+				{
+					"name": "TypeTransaction.ListAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/typetransactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"typetransactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TypeTransaction.Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameTypeTransaction\": \"Teste\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/typetransactions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"typetransactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TypeTransaction.ListId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/typetransactions/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"typetransactions",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TypeTransaction.Refresh",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"idTypeTransaction\": 3,\r\n        \"nameTypeTransaction\": \"Teste2\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/typetransactions/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"typetransactions",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TypeTransaction.Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/typetransactions/excluir/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"typetransactions",
+								"excluir",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Situation",
+			"item": [
+				{
+					"name": "Situation.ListAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/situations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"situations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Situation.Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"typeSituation\": \"teste\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/situations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"situations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Situation.ListId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/situations/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"situations",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Situation.Refresh",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"idSituation\": 4,\r\n        \"typeSituation\": \"teste2\"\r\n        \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/situations/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"situations",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Situation.Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/situations/excluir/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"situations",
+								"excluir",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BAddress",
+			"item": [
+				{
+					"name": "BAddress.ListAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/BAddresses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"BAddresses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BAddress.Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idUser\": 3,\r\n        \"street\": \"Bom pastor\",\r\n        \"number\": \"541\",\r\n        \"neighborhood\": \"Ipiranga\",\r\n        \"city\": \"São Paulo\",\r\n        \"zipcode\": \"0000000\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/BAddresses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"BAddresses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BAddress.ListId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/BAddresses/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"BAddresses",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BAddress.Refresh",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"idUser\": 3,\r\n        \"street\": \"Bom pastor Teste\",\r\n        \"number\": \"541\",\r\n        \"neighborhood\": \"Ipiranga\",\r\n        \"city\": \"São Paulo\",\r\n        \"zipcode\": \"0000001\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/BAddresses/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"BAddresses",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BAddress.Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/BAddresses/excluir/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"BAddresses",
+								"excluir",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Business",
+			"item": [
+				{
+					"name": "Business.ListAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/businesses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"businesses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Business.Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idUser\": 3,\r\n        \"idBAddress\": 6,\r\n        \"nameBusiness\": \"Teste\",\r\n        \"profitBusiness\": \"0\",\r\n        \"expenseBusiness\": \"0\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/businesses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"businesses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Business.ListId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/businesses/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"businesses",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Business.Refresh",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"idUser\": 3,\r\n    \"idBAddress\": 6,\r\n    \"idBusiness\": 7,\r\n    \"nameBusiness\": \"TesteTeste\",\r\n    \"profitBusiness\": \"0\",\r\n    \"expenseBusiness\": \"0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/businesses/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"businesses",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Business.Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/businesses/excluir/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"businesses",
+								"excluir",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CashFlow",
+			"item": [
+				{
+					"name": "CashFlow.ListAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/CashFlows",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"CashFlows"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CashFlow.Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idBusiness\": 8,\r\n        \"idSituation\": 1,\r\n        \"realBalance\": 1.0000,\r\n        \"monthBalance\": 1.0000,\r\n        \"estimatedBalance\": 1.0000,\r\n        \"totalExpenses\": 1.0000,\r\n        \"monthExpenses\": 1.0000,\r\n        \"totalProfits\": 1.0000,\r\n        \"monthProfits\": 1.0000,\r\n        \"expensesClients\": 1.0000,\r\n        \"profitsClients\": 1.0000,\r\n        \"oweClients\": 1.0000\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/CashFlows",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"CashFlows"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CashFlow.ListId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/CashFlows/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"CashFlows",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CashFlow.Refresh",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"idBusiness\": 8,\r\n        \"idSituation\": 2,\r\n        \"realBalance\": -1.0000,\r\n        \"monthBalance\": -1.0000,\r\n        \"estimatedBalance\": -1.0000,\r\n        \"totalExpenses\": -1.0000,\r\n        \"monthExpenses\": -1.0000,\r\n        \"totalProfits\": -1.0000,\r\n        \"monthProfits\": -1.0000,\r\n        \"expensesClients\": -1.0000,\r\n        \"profitsClients\": -1.0000,\r\n        \"oweClients\": -1.0000\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/CashFlows/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"CashFlows",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CashFlow.Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/CashFlows/excluir/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"CashFlows",
+								"excluir",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CAccounts",
+			"item": [
+				{
+					"name": "CAccounts.ListAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/CAccounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"CAccounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CAccounts.Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"idClient\": 4,\r\n        \"idSituation\": 1,\r\n        \"balance\": \"1\"\r\n \r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/CAccounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"CAccounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CAccounts.ListId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/CAccounts/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"CAccounts",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CAccounts.Refresh",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idClient\": 4,\r\n    \"idSituation\": 1,\r\n    \"balance\": \"2\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/CAccounts/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"CAccounts",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CAccounts.Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/CAccounts/excluir/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"CAccounts",
+								"excluir",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"emailUser\": \"adm@pending.com\",\r\n    \"passwordUser\": \"adm123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Login/Login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Login",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

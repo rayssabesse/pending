@@ -1,0 +1,593 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>pending_webAPI</name>
+    </assembly>
+    <members>
+        <member name="M:pending_webAPI.Controllers.BAddressesController.Get">
+            <summary>
+            List all BAddresses
+            </summary>
+            <returns>list BAddress status code 200 - Ok</returns>
+        </member>
+        <member name="M:pending_webAPI.Controllers.BAddressesController.GetById(System.Int32)">
+            <summary>
+            Busca um BAddresse através de seu ID
+            </summary>
+            <param name="id">ID do BAddresse buscado</param>
+            <returns>O BAddress buscado</returns>
+        </member>
+        <member name="M:pending_webAPI.Controllers.BAddressesController.Post(pending_webAPI.Domains.BAddress)">
+            <summary>
+            Cadastra um novo BAddresse
+            </summary>
+            <param name="newBAddress">Objeto novoBAddresse com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.BAddressesController.Delete(System.Int32)">
+            <summary>
+            Deleta um BAddress existente
+            </summary>
+            <param name="id">ID do BAddress deletado</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.BAddressesController.Put(System.Int32,pending_webAPI.Domains.BAddress)">
+            <summary>
+            Atualiza um BAddress existente passando o id pela URL da requisição
+            </summary>
+            <param name="id">id do BAddress que será atualizado</param>
+            <param name="BAddressRefresh">Objeto BAddressAtualizado com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.BusinessesController.Get">
+            <summary>
+            List all Businesses
+            </summary>
+            <returns>list Business status code 200 - Ok</returns>
+        </member>
+        <member name="M:pending_webAPI.Controllers.BusinessesController.GetById(System.Int32)">
+            <summary>
+            Busca um Businesse através de seu ID
+            </summary>
+            <param name="id">ID do Businesse buscado</param>
+            <returns>O Business buscado</returns>
+        </member>
+        <member name="M:pending_webAPI.Controllers.BusinessesController.Post(pending_webAPI.Domains.Business)">
+            <summary>
+            Cadastra um novo Businesse
+            </summary>
+            <param name="newBusiness">Objeto novoBusinesse com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.BusinessesController.Delete(System.Int32)">
+            <summary>
+            Deleta um Business existente
+            </summary>
+            <param name="id">ID do Business deletado</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.BusinessesController.Put(System.Int32,pending_webAPI.Domains.Business)">
+            <summary>
+            Atualiza um Business existente passando o id pela URL da requisição
+            </summary>
+            <param name="id">id do Business que será atualizado</param>
+            <param name="BusinessRefresh">Objeto BusinessAtualizado com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.CAccountsController.Get">
+            <summary>
+            List all CAccounts
+            </summary>
+            <returns>list CAccount status code 200 - Ok</returns>
+        </member>
+        <member name="M:pending_webAPI.Controllers.CAccountsController.GetById(System.Int32)">
+            <summary>
+            Busca um CAccounte através de seu ID
+            </summary>
+            <param name="id">ID do CAccounte buscado</param>
+            <returns>O CAccount buscado</returns>
+        </member>
+        <member name="M:pending_webAPI.Controllers.CAccountsController.Post(pending_webAPI.Domains.CAccount)">
+            <summary>
+            Cadastra um novo CAccounte
+            </summary>
+            <param name="newCAccount">Objeto novoCAccounte com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.CAccountsController.Delete(System.Int32)">
+            <summary>
+            Deleta um CAccount existente
+            </summary>
+            <param name="id">ID do CAccount deletado</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.CAccountsController.Put(System.Int32,pending_webAPI.Domains.CAccount)">
+            <summary>
+            Atualiza um CAccount existente passando o id pela URL da requisição
+            </summary>
+            <param name="id">id do CAccount que será atualizado</param>
+            <param name="CAccountRefresh">Objeto CAccountAtualizado com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.CashFlowsController.Get">
+            <summary>
+            List all CashFlows
+            </summary>
+            <returns>list CashFlow status code 200 - Ok</returns>
+        </member>
+        <member name="M:pending_webAPI.Controllers.CashFlowsController.GetById(System.Int32)">
+            <summary>
+            Busca um CashFlow através de seu ID
+            </summary>
+            <param name="id">ID do CashFlowe buscado</param>
+            <returns>O CashFlow buscado</returns>
+        </member>
+        <member name="M:pending_webAPI.Controllers.CashFlowsController.Post(pending_webAPI.Domains.CashFlow)">
+            <summary>
+            Cadastra um novo CashFlowe
+            </summary>
+            <param name="newCashFlow">Objeto novoCashFlowe com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.CashFlowsController.Delete(System.Int32)">
+            <summary>
+            Deleta um CashFlow existente
+            </summary>
+            <param name="id">ID do CashFlow deletado</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.CashFlowsController.Put(System.Int32,pending_webAPI.Domains.CashFlow)">
+            <summary>
+            Atualiza um CashFlow existente passando o id pela URL da requisição
+            </summary>
+            <param name="id">id do CashFlow que será atualizado</param>
+            <param name="CashFlowRefresh">Objeto CashFlowAtualizado com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.ClientsController.Get">
+            <summary>
+            List all Clients
+            </summary>
+            <returns>list Client status code 200 - Ok</returns>
+        </member>
+        <member name="M:pending_webAPI.Controllers.ClientsController.GetById(System.Int32)">
+            <summary>
+            Busca um Cliente através de seu ID
+            </summary>
+            <param name="id">ID do Cliente buscado</param>
+            <returns>O Client buscado</returns>
+        </member>
+        <member name="M:pending_webAPI.Controllers.ClientsController.Post(pending_webAPI.Domains.Client)">
+            <summary>
+            Cadastra um novo Cliente
+            </summary>
+            <param name="newClient">Objeto novoCliente com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.ClientsController.Delete(System.Int32)">
+            <summary>
+            Deleta um Client existente
+            </summary>
+            <param name="id">ID do Client deletado</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.ClientsController.Put(System.Int32,pending_webAPI.Domains.Client)">
+            <summary>
+            Atualiza um Client existente passando o id pela URL da requisição
+            </summary>
+            <param name="id">id do Client que será atualizado</param>
+            <param name="ClientRefresh">Objeto ClientAtualizado com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.SituationsController.Get">
+            <summary>
+            List all Situations
+            </summary>
+            <returns>list Situation status code 200 - Ok</returns>
+        </member>
+        <member name="M:pending_webAPI.Controllers.SituationsController.GetById(System.Int32)">
+            <summary>
+            Busca um Situatione através de seu ID
+            </summary>
+            <param name="id">ID do Situatione buscado</param>
+            <returns>O Situation buscado</returns>
+        </member>
+        <member name="M:pending_webAPI.Controllers.SituationsController.Post(pending_webAPI.Domains.Situation)">
+            <summary>
+            Cadastra um novo Situatione
+            </summary>
+            <param name="newSituation">Objeto novoSituatione com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.SituationsController.Delete(System.Int32)">
+            <summary>
+            Deleta um Situation existente
+            </summary>
+            <param name="id">ID do Situation deletado</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.SituationsController.Put(System.Int32,pending_webAPI.Domains.Situation)">
+            <summary>
+            Atualiza um Situation existente passando o id pela URL da requisição
+            </summary>
+            <param name="id">id do Situation que será atualizado</param>
+            <param name="SituationRefresh">Objeto SituationAtualizado com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.TransactionsController.Get">
+            <summary>
+            List all Transactions
+            </summary>
+            <returns>list Transaction status code 200 - Ok</returns>
+        </member>
+        <member name="M:pending_webAPI.Controllers.TransactionsController.GetById(System.Int32)">
+            <summary>
+            Busca uma Transação através de seu ID
+            </summary>
+            <param name="id">ID da Transação buscado</param>
+            <returns>A Transação buscada</returns>
+        </member>
+        <member name="M:pending_webAPI.Controllers.TransactionsController.Post(pending_webAPI.Domains.Transaction)">
+            <summary>
+            Cadastra uma nova Transação
+            </summary>
+            <param name="newTransaction">Objeto novaTransação com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.TransactionsController.Delete(System.Int32)">
+            <summary>
+            Deleta uma Transação existente
+            </summary>
+            <param name="id">ID da Transação deletada</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.TransactionsController.Put(System.Int32,pending_webAPI.Domains.Transaction)">
+            <summary>
+            Atualiza uma Transação existente passando o id pela URL da requisição
+            </summary>
+            <param name="id">id da Transação que será atualizado</param>
+            <param name="TransactionRefresh">Objeto TransaçãoAtualizado com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.TypeTransactionsController.Get">
+            <summary>
+            List all TypeTransactions
+            </summary>
+            <returns>list TypeTransaction status code 200 - Ok</returns>
+        </member>
+        <member name="M:pending_webAPI.Controllers.TypeTransactionsController.GetById(System.Int32)">
+            <summary>
+            Busca um TypeTransactione através de seu ID
+            </summary>
+            <param name="id">ID do TypeTransactione buscado</param>
+            <returns>O TypeTransaction buscado</returns>
+        </member>
+        <member name="M:pending_webAPI.Controllers.TypeTransactionsController.Post(pending_webAPI.Domains.TypeTransaction)">
+            <summary>
+            Cadastra um novo TypeTransactione
+            </summary>
+            <param name="newTypeTransaction">Objeto novoTypeTransactione com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.TypeTransactionsController.Delete(System.Int32)">
+            <summary>
+            Deleta um TypeTransaction existente
+            </summary>
+            <param name="id">ID do TypeTransaction deletado</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.TypeTransactionsController.Put(System.Int32,pending_webAPI.Domains.TypeTransaction)">
+            <summary>
+            Atualiza um TypeTransaction existente passando o id pela URL da requisição
+            </summary>
+            <param name="id">id do TypeTransaction que será atualizado</param>
+            <param name="TypeTransactionRefresh">Objeto TypeTransactionAtualizado com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.UsersController.Get">
+            <summary>
+            List all Users
+            </summary>
+            <returns>list user status code 200 - Ok</returns>
+        </member>
+        <member name="M:pending_webAPI.Controllers.UsersController.GetById(System.Int32)">
+            <summary>
+            Busca um Usuario através de seu ID
+            </summary>
+            <param name="id">ID do Usuario buscado</param>
+            <returns>O Usuario buscado</returns>
+        </member>
+        <member name="M:pending_webAPI.Controllers.UsersController.Post(pending_webAPI.Domains.User)">
+            <summary>
+            Cadastra um novo Usuario
+            </summary>
+            <param name="newUser">Objeto novoUsuario com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.UsersController.Delete(System.Int32)">
+            <summary>
+            Deleta um Usuario existente
+            </summary>
+            <param name="id">ID do Usuario deletado</param>
+        </member>
+        <member name="M:pending_webAPI.Controllers.UsersController.Put(System.Int32,pending_webAPI.Domains.User)">
+            <summary>
+            Atualiza um Usuario existente passando o id pela URL da requisição
+            </summary>
+            <param name="id">id do Usuario que será atualizado</param>
+            <param name="userRefresh">Objeto UsuarioAtualizado com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IBAddressRepository.List">
+            <summary>
+            Lista todos os BAddresses
+            </summary>
+            <returns>Uma lista de BAddresses</returns>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IBAddressRepository.ListId(System.Int32)">
+            <summary>
+            Busca um BAddresse por seu Id
+            </summary>
+            <param name="idBAddress">Id do BAddresse</param>
+            <returns>BAddresse buscado</returns>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IBAddressRepository.Register(pending_webAPI.Domains.BAddress)">
+            <summary>
+            Cadastra um BAddresse
+            </summary>
+            <param name="newBAddress">Objeto novoBAddresse com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IBAddressRepository.Refresh(System.Int32,pending_webAPI.Domains.BAddress)">
+            <summary>
+            Atualiza um BAddresse específico
+            </summary>
+            <param name="idBAddress">Id do BAddresse atualizado</param>
+            <param name="BAddressRefresh">BAddresseAtualizado com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IBAddressRepository.Delete(System.Int32)">
+            <summary>
+            Deleta um BAddresse específico
+            </summary>
+            <param name="idBAddress">Id do BAddresse deletado</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IBusinessRepository.List">
+            <summary>
+            Lista todos os Businesses
+            </summary>
+            <returns>Uma lista de Businesses</returns>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IBusinessRepository.ListId(System.Int32)">
+            <summary>
+            Busca um Businesse por seu Id
+            </summary>
+            <param name="idBusiness">Id do Businesse</param>
+            <returns>Businesse buscado</returns>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IBusinessRepository.Register(pending_webAPI.Domains.Business)">
+            <summary>
+            Cadastra um Businesse
+            </summary>
+            <param name="newBusiness">Objeto novoBusinesse com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IBusinessRepository.Refresh(System.Int32,pending_webAPI.Domains.Business)">
+            <summary>
+            Atualiza um Businesse específico
+            </summary>
+            <param name="idBusiness">Id do Businesse atualizado</param>
+            <param name="BusinessRefresh">BusinesseAtualizado com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IBusinessRepository.Delete(System.Int32)">
+            <summary>
+            Deleta um Businesse específico
+            </summary>
+            <param name="idBusiness">Id do Businesse deletado</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ICAccountRepository.List">
+            <summary>
+            Lista todos os CAccountes
+            </summary>
+            <returns>Uma lista de CAccountes</returns>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ICAccountRepository.ListId(System.Int32)">
+            <summary>
+            Busca um CAccounte por seu Id
+            </summary>
+            <param name="idCAccount">Id do CAccounte</param>
+            <returns>CAccounte buscado</returns>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ICAccountRepository.Register(pending_webAPI.Domains.CAccount)">
+            <summary>
+            Cadastra um CAccounte
+            </summary>
+            <param name="newCAccount">Objeto novoCAccounte com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ICAccountRepository.Refresh(System.Int32,pending_webAPI.Domains.CAccount)">
+            <summary>
+            Atualiza um CAccounte específico
+            </summary>
+            <param name="idCAccount">Id do CAccounte atualizado</param>
+            <param name="CAccountRefresh">CAccounteAtualizado com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ICAccountRepository.Delete(System.Int32)">
+            <summary>
+            Deleta um CAccounte específico
+            </summary>
+            <param name="idCAccount">Id do CAccounte deletado</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ICashFlowRepository.List">
+            <summary>
+            Lista todos os CashFlowes
+            </summary>
+            <returns>Uma lista de CashFlowes</returns>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ICashFlowRepository.ListId(System.Int32)">
+            <summary>
+            Busca um CashFlowe por seu Id
+            </summary>
+            <param name="idCashFlow">Id do CashFlowe</param>
+            <returns>CashFlowe buscado</returns>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ICashFlowRepository.Register(pending_webAPI.Domains.CashFlow)">
+            <summary>
+            Cadastra um CashFlowe
+            </summary>
+            <param name="newCashFlow">Objeto novoCashFlowe com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ICashFlowRepository.Refresh(System.Int32,pending_webAPI.Domains.CashFlow)">
+            <summary>
+            Atualiza um CashFlowe específico
+            </summary>
+            <param name="idCashFlow">Id do CashFlowe atualizado</param>
+            <param name="CashFlowRefresh">CashFloweAtualizado com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ICashFlowRepository.Delete(System.Int32)">
+            <summary>
+            Deleta um CashFlowe específico
+            </summary>
+            <param name="idCashFlow">Id do CashFlowe deletado</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IClientRepository.List">
+            <summary>
+            Lista todos os Clientes
+            </summary>
+            <returns>Uma lista de Clientes</returns>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IClientRepository.ListId(System.Int32)">
+            <summary>
+            Busca um Cliente por seu Id
+            </summary>
+            <param name="idClient">Id do Cliente</param>
+            <returns>Cliente buscado</returns>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IClientRepository.Register(pending_webAPI.Domains.Client)">
+            <summary>
+            Cadastra um Cliente
+            </summary>
+            <param name="newClient">Objeto novoCliente com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IClientRepository.Refresh(System.Int32,pending_webAPI.Domains.Client)">
+            <summary>
+            Atualiza um Cliente específico
+            </summary>
+            <param name="idClient">Id do Cliente atualizado</param>
+            <param name="clientRefresh">ClienteAtualizado com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IClientRepository.Delete(System.Int32)">
+            <summary>
+            Deleta um Cliente específico
+            </summary>
+            <param name="idClient">Id do Cliente deletado</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ISituationRepository.List">
+            <summary>
+            Lista todos os Situationes
+            </summary>
+            <returns>Uma lista de Situationes</returns>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ISituationRepository.ListId(System.Int32)">
+            <summary>
+            Busca um Situatione por seu Id
+            </summary>
+            <param name="idSituation">Id do Situatione</param>
+            <returns>Situatione buscado</returns>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ISituationRepository.Register(pending_webAPI.Domains.Situation)">
+            <summary>
+            Cadastra um Situatione
+            </summary>
+            <param name="newSituation">Objeto novoSituatione com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ISituationRepository.Refresh(System.Int32,pending_webAPI.Domains.Situation)">
+            <summary>
+            Atualiza um Situatione específico
+            </summary>
+            <param name="idSituation">Id do Situatione atualizado</param>
+            <param name="SituationRefresh">SituationeAtualizado com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ISituationRepository.Delete(System.Int32)">
+            <summary>
+            Deleta um Situatione específico
+            </summary>
+            <param name="idSituation">Id do Situatione deletado</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ITransactionRepository.List">
+            <summary>
+            Lista todos os Transaction
+            </summary>
+            <returns>Uma lista de Transaction</returns>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ITransactionRepository.ListId(System.Int32)">
+            <summary>
+            Busca uma Transaction por seu Id
+            </summary>
+            <param name="idTransaction">Id do CliTransactionente</param>
+            <returns>Cliente buscado</returns>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ITransactionRepository.Register(pending_webAPI.Domains.Transaction)">
+            <summary>
+            Cadastra uma Transaction
+            </summary>
+            <param name="newTransaction">Objeto novaTransaction com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ITransactionRepository.Refresh(System.Int32,pending_webAPI.Domains.Transaction)">
+            <summary>
+            Atualiza um Cliente específico
+            </summary>
+            <param name="idTransaction">Id do Transaction atualizado</param>
+            <param name="TrasactionRefresh">TransactionAtualizado com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ITransactionRepository.Delete(System.Int32)">
+            <summary>
+            Deleta uma Transaction específico
+            </summary>
+            <param name="idTransaction">Id da Transaction deletado</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ITypeTransactionRepository.List">
+            <summary>
+            Lista todos os TypeTransactiones
+            </summary>
+            <returns>Uma lista de TypeTransactiones</returns>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ITypeTransactionRepository.ListId(System.Int32)">
+            <summary>
+            Busca um TypeTransactione por seu Id
+            </summary>
+            <param name="idTypeTransaction">Id do TypeTransactione</param>
+            <returns>TypeTransactione buscado</returns>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ITypeTransactionRepository.Register(pending_webAPI.Domains.TypeTransaction)">
+            <summary>
+            Cadastra um TypeTransactione
+            </summary>
+            <param name="newTypeTransaction">Objeto novoTypeTransactione com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ITypeTransactionRepository.Refresh(System.Int32,pending_webAPI.Domains.TypeTransaction)">
+            <summary>
+            Atualiza um TypeTransactione específico
+            </summary>
+            <param name="idTypeTransaction">Id do TypeTransactione atualizado</param>
+            <param name="TypeTransactionRefresh">TypeTransactioneAtualizado com os novos dados</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.ITypeTransactionRepository.Delete(System.Int32)">
+            <summary>
+            Deleta um TypeTransactione específico
+            </summary>
+            <param name="idTypeTransaction">Id do TypeTransactione deletado</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IUser_Repository.Login(System.String,System.String)">
+            <summary>
+            validate user
+            </summary>
+            <param name="email"> email user </param>
+            <param name="password"> password user </param>
+            <returns> user login </returns>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IUser_Repository.List">
+            <summary>
+            List all user
+            </summary>
+            <returns>list user</returns>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IUser_Repository.Register(pending_webAPI.Domains.User)">
+            <summary>
+            register user
+            </summary>
+            <param name="newUser">newUser</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IUser_Repository.Refresh(System.Int32,pending_webAPI.Domains.User)">
+            <summary>
+            Refresh user specific
+            </summary>
+            <param name="idUser">Id do Usuario atualizado</param>
+            <param name="userRefresh">UsuarioAtualizado com os novos dados</param>
+            
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IUser_Repository.Delete(System.Int32)">
+            <summary>
+            Deleta um Usuario específico
+            </summary>
+            <param name="idUser">Id do Usuario deletado</param>
+        </member>
+        <member name="M:pending_webAPI.Interfaces.IUser_Repository.ListId(System.Int32)">
+            <summary>
+            Busca um Usuario por seu Id
+            </summary>
+            <param name="id">Id do Usuario</param>
+            <returns>Usuario buscado</returns>
+        </member>
+    </members>
+</doc>
