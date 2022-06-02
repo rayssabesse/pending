@@ -5,20 +5,7 @@ import {
     TouchableOpacity,
     View,
     Image,
-    ImageBackground,
-    TextInput,
-    SafeAreaView,
-    PixelRatio,
 } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import api from '../services/api';
-
-import Clients from './clients';
-
-const bottomTab = createBottomTabNavigator();
 
 export default class Home extends Component {
 
@@ -62,6 +49,28 @@ export default class Home extends Component {
                         <Image source={require('../assets/Right.png')} />
                     </TouchableOpacity>
                 </View>
+
+                <View style={styles.navBar}>
+                    <TouchableOpacity
+                        onPress={() => this.props.navigation.navigate('Main')}>
+                        <Image source={require('../assets/Home.png')} />
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        onPress={() => this.props.navigation.navigate('Settings')}>
+                        <Image source={require('../assets/Settings.png')} />
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        onPress={() => this.props.navigation.navigate('')}>
+                        <Image source={require('../assets/Chart.png')} />
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        onPress={() => this.props.navigation.navigate('Clients')}>
+                        <Image source={require('../assets/Client.png')} />
+                    </TouchableOpacity>
+                </View>
             </View>
         );
     }
@@ -81,7 +90,10 @@ const styles = StyleSheet.create({
         marginBottom: 30,
         flexDirection: 'row',
         alignSelf: 'center',
+        alignItems: 'center',
         justifyContent: 'space-around',
+        position: 'absolute',
+        bottom: 0,
     },
 
     btnStats: {

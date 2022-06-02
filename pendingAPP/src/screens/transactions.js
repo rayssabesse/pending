@@ -14,7 +14,6 @@ const bottomTab = createBottomTabNavigator();
 
 import Home from './main';
 
-
 export default class transactions extends React.Component {
     state = {
         firstQuery: '',
@@ -30,7 +29,6 @@ export default class transactions extends React.Component {
             <View style={styles.main}>
                 <View style={styles.mainHeader}>
                     <View style={styles.container_header}>
-
                         <View style={styles.container_header2}>
                             <View style={styles.containerAR}>
                                 <Text style={styles.textName}>Nome completo</Text>
@@ -42,7 +40,7 @@ export default class transactions extends React.Component {
                             </View>
 
                             <Pressable style={styles.buttonSaldo}>
-                                <Text style={styles.textButton}>SALDO: R$XXXX,XX</Text>
+                                <Text style={styles.textButtonSaldo}>SALDO: R$XXXX,XX</Text>
                             </Pressable>
                         </View>
 
@@ -52,10 +50,9 @@ export default class transactions extends React.Component {
                             </Pressable>
 
                             <Pressable style={styles.buttonRemove}>
-                                <Text style={styles.textButton}>remover cliente</Text>
+                                <Text style={styles.textButton}>adicionar compra</Text>
                             </Pressable>
                         </View>
-
                     </View>
                 </View>
 
@@ -66,19 +63,28 @@ export default class transactions extends React.Component {
                 </View>
 
                 <View style={styles.containerTransaction}>
-                    <View style={styles.textTransaction}>
+                    <View style={styles.transaction}>
                         <Text style={styles.textPag}>Pagamento</Text>
                         <Text style={styles.textClient}>Nome do Cliente</Text>
+                    </View>
+
+                    <View style={styles.containerTransaction2}>
+                        <Text style={styles.textPag}>+ R$200,00</Text>
+                        <Text style={styles.textClient}>22/04/22 1:30 PM</Text>
                     </View>
                 </View>
 
                 <View style={styles.containerTransaction}>
-                    <View style={styles.textTransaction}>
+                    <View style={styles.transaction}>
                         <Text style={styles.textPag}>Pagamento</Text>
                         <Text style={styles.textClient}>Nome do Cliente</Text>
                     </View>
-                </View>
 
+                    <View style={styles.containerTransaction2}>
+                        <Text style={styles.textPag}>+ R$200,00</Text>
+                        <Text style={styles.textClient}>22/04/22 1:30 PM</Text>
+                    </View>
+                </View>
             </View>
         );
     }
@@ -122,6 +128,7 @@ const styles = StyleSheet.create({
         fontSize: 13,
         color: '#999',
     },
+
     containerData: {
         marginLeft: 40,
     },
@@ -137,6 +144,7 @@ const styles = StyleSheet.create({
         color: '#fff',
         textTransform: 'uppercase',
         fontWeight: '700',
+
     },
 
     buttonAdd: {
@@ -164,9 +172,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 20,
-        backgroundColor: '#999',
         marginTop: 15,
         marginLeft: 25,
+        borderWidth: 1,
     },
 
     textButton: {
@@ -176,23 +184,33 @@ const styles = StyleSheet.create({
         textTransform: 'uppercase',
     },
 
+    textButtonSaldo: {
+        fontSize: 12,
+        fontWeight: '700',
+        textTransform: 'uppercase',
+    },
+
     containerButton: {
         marginLeft: 20,
         marginTop: 50,
         height: 100,
+
     },
 
     containerTransaction: {
-        marginLeft: 20,
+        // marginLeft: 20,
         marginTop: 20,
+        justifyContent: 'space-between',
+        flexDirection: 'row',
+        marginLeft: 25,
+        marginRight: 25,
     },
 
-    textTransaction: {
-        marginLeft: 30,
+    transaction: {
     },
 
     textPag: {
-        marginBottom: 5,
+        marginBottom: 1,
     },
     textClient: {
         color: '#999',

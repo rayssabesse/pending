@@ -29,13 +29,10 @@ export default class Clients extends React.Component {
 
             <ScrollView
                 style={styles.main}
-                contentContainerStyle={{ flexGrow: 1, flexDirection: 'column' }}
-            >
+                contentContainerStyle={{ flexGrow: 1, flexDirection: 'column' }}>
 
                 <View style={styles.mainHeader}>
-
                     <View style={styles.containerAR}>
-
                         <Pressable style={styles.buttonAdd}>
                             <Text style={styles.text}>adicionar cliente</Text>
                         </Pressable>
@@ -43,9 +40,7 @@ export default class Clients extends React.Component {
                         <Pressable style={styles.buttonRemove}>
                             <Text style={styles.text}>remover cliente</Text>
                         </Pressable>
-                        <StatusBar style="auto" />
                     </View>
-
 
                     <View style={styles.containerS}>
                         <Searchbar style={styles.searchBar}
@@ -53,7 +48,6 @@ export default class Clients extends React.Component {
                             onChangeText={query => { this.setState({ firstQuery: query }); }}
                             value={firstQuery} />
                     </View>
-
                 </View>
 
                 <View style={styles.vector}>
@@ -61,7 +55,6 @@ export default class Clients extends React.Component {
                 </View>
 
                 <View style={styles.cards}>
-
                     <View style={styles.cardClient}>
                         <View style={styles.cardColourG} />
                         <View style={styles.mainInfoCard}>
@@ -104,23 +97,29 @@ export default class Clients extends React.Component {
                             </View>
                         </View>
                     </View>
-
-                    <View style={styles.cardClient}>
-                        <View style={styles.cardColourY} />
-                        <View style={styles.mainInfoCard}>
-                            <Text style={styles.key}>nome do cliente</Text>
-                            <Text style={styles.keyPhone}>+55 1198975-0185</Text>
-                            <View style={styles.clientInfo_}>
-                                <Text style={styles.keyR$}>R$</Text>
-                                <Pressable style={styles.button}>
-                                    <Text style={styles.text}>mandar mensagem</Text>
-                                </Pressable>
-                            </View>
-                        </View>
-                    </View>
-
                 </View>
 
+                <View style={styles.navBar}>
+                    <TouchableOpacity
+                        onPress={() => this.props.navigation.navigate('Main')}>
+                        <Image source={require('../assets/Home.png')} />
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        onPress={() => this.props.navigation.navigate('Settings')}>
+                        <Image source={require('../assets/Settings.png')} />
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        onPress={() => this.props.navigation.navigate('')}>
+                        <Image source={require('../assets/Chart.png')} />
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        onPress={() => this.props.navigation.navigate('Clients')}>
+                        <Image source={require('../assets/Client.png')} />
+                    </TouchableOpacity>
+                </View>
             </ScrollView>
         );
     }
@@ -137,10 +136,11 @@ const styles = StyleSheet.create({
         height: 60,
         backgroundColor: '#222222',
         borderRadius: 20,
-        marginBottom: 30,
         flexDirection: 'row',
         alignSelf: 'center',
+        alignItems: 'center',
         justifyContent: 'space-around',
+        bottom: 0,
     },
 
     navBarIcons: {
@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
         width: 370,
         flexDirection: 'row',
         justifyContent: 'space-between',
-        marginTop: 35,
+        marginTop: 25,
     },
 
     buttonAdd: {
@@ -237,7 +237,7 @@ const styles = StyleSheet.create({
     cards: {
         justifyContent: 'center',
         alignItems: 'center',
-        marginTop: 35,
+        marginTop: 25,
     },
 
     cardClient: {
@@ -283,7 +283,6 @@ const styles = StyleSheet.create({
     key: {
         color: "#fff",
         fontSize: 20,
-        // fontFamily: 'Inter',
         marginBottom: 5,
         textTransform: 'uppercase'
     },

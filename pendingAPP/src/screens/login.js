@@ -5,13 +5,10 @@ import {
     TouchableOpacity,
     View,
     Image,
-    ImageBackground,
     TextInput,
-    SafeAreaView,
 } from 'react-native';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
-
 import api from '../services/api';
 
 

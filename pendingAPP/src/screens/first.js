@@ -5,18 +5,9 @@ import {
     TouchableOpacity,
     View,
     Image,
-    ImageBackground,
-    TextInput,
-    SafeAreaView,
 } from 'react-native';
 
-
-import AsyncStorage from '@react-native-async-storage/async-storage';
-
-import api from '../services/api';
-
-
-export default class first extends Component {
+export default class First extends Component {
 
 
     render() {
