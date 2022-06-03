@@ -2,14 +2,24 @@ import { auto } from 'async';
 import { StatusBar } from 'expo-status-bar';
 import { hidden } from 'jest-haste-map/node_modules/chalk';
 import { upperCase } from 'lodash';
-import { StyleSheet, Text, View, Pressable, Image } from 'react-native';
+import { StyleSheet, Text, View, Pressable, TouchableOpacity, Image } from 'react-native';
 import { Searchbar } from 'react-native-paper';
 import React, { Component } from 'react';
 import 'react-native-gesture-handler';
 import { ScrollView } from 'react-native-gesture-handler';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
-import HorizontalBarGraph from '@chartiful/react-native-horizontal-bar-graph'
+import HorizontalBarGraph from '@chartiful/react-native-horizontal-bar-graph';
+
+
+// import {
+//   LineChart,
+//   BarChart,
+//   PieChart,
+//   ProgressChart,
+//   ContributionGraph,
+//   StackedBarChart
+// } from "react-native-chart-kit";
 
 
 const bottomTab = createBottomTabNavigator();
@@ -21,6 +31,7 @@ export default class statistics extends React.Component {
     state = {
         firstQuery: '',
     };
+    
 
     render() {
         const { firstQuery } = this.state;
@@ -42,7 +53,7 @@ export default class statistics extends React.Component {
                     </View>
 
 
-                    <View style={styles.containerButton}>
+                    {/* <View style={styles.containerButton}>
 
                         <View style={styles.containerButton2}>
                             <Pressable style={styles.buttonAdd}>
@@ -63,39 +74,69 @@ export default class statistics extends React.Component {
                                 <Text style={styles.textButton}>Compras extras</Text>
                             </Pressable>
                         </View>
-                    </View>
+                    </View> */}
                 </View>
 
 
                 <View style={styles.containerStats}>
-                    <HorizontalBarGraph
-                        data={[ 50, 75, 100, 125]}
-                        labels={['Ganhos', 'Devendo', 'Clientes', 'Despesas']}
+                    <HorizontalBarGraph style={styles.graph}
+                        data={[75, 100, 125,100]}
+                        labels={['Lucro', 'Clientes devendo', 'Despesas clientes', 'Despesas Total']}
+                        // legend = {["L1", "L2", "L3"]}
                         width={350}
-                        height={250}
+                        height={300}
                         barRadius={15}
-                        barColor={'#999'}
+                        barColor={'#90C9E3'}
+                        barWidthPercentage={0.40}
+                        
                         baseConfig={{
                             hasYAxisBackgroundLines: false,
+                            hasYAxisLabels: false,
                             xAxisLabelStyle: {
                                 rotation: 0,
-                                fontSize: 12,
-                                width: 85,
+                                fontSize: 15,
+                                width: 150,
+                                // height: 150,
                                 yOffset: 4,
-                                xOffset: -15
+                                xOffset: -50
+                                
+
+
                             },
-                            yAxisLabelStyle: {
-                                rotation: 30,
-                                fontSize: 13,
-                                prefix: '$',
-                                position: 'bottom',
-                                xOffset: 15,
-                                decimals: 2,
-                                height: 100
-                            }
+                            // yAxisLabelStyle: {
+                            //     rotation: 20,
+                            //     fontSize: 13,
+                            //     prefix: '$',
+                            //     position: 'bottom',
+                            //     xOffset: 15,
+                            //     // decimals: 2,
+                            //      height: 30
+                            // }
                         }}
                     />
 
+                </View>
+
+                <View style={styles.navBar}>
+                    <TouchableOpacity
+                        onPress={() => this.props.navigation.navigate('Main')}>
+                        <Image source={require('../assets/Home.png')} />
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        onPress={() => this.props.navigation.navigate('Settings')}>
+                        <Image source={require('../assets/Settings.png')} />
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        onPress={() => this.props.navigation.navigate('statistics')}>
+                        <Image source={require('../assets/Chart.png')} />
+                    </TouchableOpacity>
+
+                    <TouchableOpacity
+                        onPress={() => this.props.navigation.navigate('Clients')}>
+                        <Image source={require('../assets/Client.png')} />
+                    </TouchableOpacity>
                 </View>
 
             </View>
@@ -118,8 +159,8 @@ const styles = StyleSheet.create({
     },
 
     total_budget: {
-        marginTop: 30,
-        marginLeft: 20,
+        marginTop: 80,
+        marginLeft: 40,
     },
 
     total_budget_text: {
@@ -175,8 +216,38 @@ const styles = StyleSheet.create({
     },
 
     containerStats: {
-        marginTop: 40,
-        marginLeft: 20, 
+        marginTop: 50,
+        marginLeft: 30, 
+        // height: 10,
+        
     },
+
+    // labels: {
+    //     fontSize: 12,
+    //     fontWeight: '700',
+    //     color: 'white',
+    //     textTransform: 'uppercase',
+    // }
+
+    navBar: {
+        width: 360,
+        height: 60,
+        backgroundColor: '#222222',
+        borderRadius: 20,
+        marginBottom: 60,
+        flexDirection: 'row',
+        alignSelf: 'center',
+        alignItems: 'center',
+        justifyContent: 'space-around',
+        position: 'absolute',
+        bottom: 0,
+    },
+
+    // graph:{
+    //     fontSize: 12,
+    //     fontWeight: '700',
+    //     color: 'white',
+    //     textTransform: 'uppercase',
+    // }
 
 });

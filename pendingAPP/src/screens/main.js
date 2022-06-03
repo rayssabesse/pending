@@ -62,7 +62,7 @@ export default class Home extends Component {
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                        onPress={() => this.props.navigation.navigate('')}>
+                        onPress={() => this.props.navigation.navigate('statistics')}>
                         <Image source={require('../assets/Chart.png')} />
                     </TouchableOpacity>
 

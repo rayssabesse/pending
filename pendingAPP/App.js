@@ -11,6 +11,7 @@ import First from './src/screens/first';
 import Settings from './src/screens/settings';
 import Home from './src/screens/main';
 import Clients from './src/screens/clients';
+import statistics from './src/screens/statistics';
 
 
 const AuthStack = createStackNavigator();
@@ -55,6 +56,13 @@ class App extends Component {
             options={{ headerShown: false }}
             component={Clients}
           />
+
+          <AuthStack.Screen
+            name='statistics'
+            options={{ headerShown: false }}
+            component={statistics}
+          />
+
         </AuthStack.Navigator>
       </NavigationContainer>
     );
